@@ -34,13 +34,21 @@ This is the result from `sudo i2cdetect -y 1` on the Raspberry Pi connected to t
 ##  Usage
 ### Options Explanation
 `-v`                    : use verbose mode, printing every reading to the screen
+
 `-l`                    : prints data to the CSV file with default log file name "/home/pi/temperature_data.csv
+
 `--log`                 : prints data to the CSV file with the provided file name
+
 `--email`               : sends an email to the provided address
+
 `--emailConfig`         : file path to the email config file for outgoing email account. Default is ./email_config.json
+
 `--iterations`          : the number of temperature readings to take. Default is 1
+
 `--seconds`             : the number of seconds to wait between readings.  Default is 0
+
 `--emailAfter`          : the number of iterations after which to send an email
+
 `--finalOnly` or `-f`   : if present, sends an email only containing the average, min, and max
 
 ## Example
